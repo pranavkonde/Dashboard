@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.main-body{
+    background-color: #DBDADE;
+    display: flex;
+    overflow-y: auto;
+}
+
+.left-content{
+    width: 70%;
+}
+
+.small-cards{
+    display: flex;
+}
+
+.small-card{
+    background-color: white;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.small-card-heading{
+    display: flex;
+}
+
+.small-card-footer{
+    display: flex;
+}
+
+.large-cards{
+    display: flex;
+}
+
+.large-card{
+    background-color: white;
+    margin: 5px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.announcements-details{
+    display: flex;
+    border-bottom: 0.5px solid grey;
+    border-top: 0.5px solid grey;
+    padding: 10px;
+    justify-content: space-between;
+
+    p, h4{
+        font-size: 12px;
+        margin-right: 5px;
+        align-items: center;
+    }
+}
+
+.left-details{
+    display: flex;
+}
+
+.announcements{
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.announcements-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.promotion{
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 15px 25px;
+}
+
+.promotion-details{
+    display: flex;
+    padding: 20px 0px;
+}
+
+.promotion-heading{
+    font-size: 12px;
+    font-weight:600;
+}
+
+
+.promotion-left-details{
+    background-image: url("./assests/promotion.svg");
+    background-repeat: no-repeat;
+}
+
+.promotion-description{
+    display: flex;
+}
+
+.promotion-type-count{
+    display: flex;
+}
+
+.promotion-deals{
+    display: flex;
+}
+
+.deal-counts{
+    display: flex;
+    font-size: 10px;
+    margin: 10px 0px;
+    justify-content: space-between;
+
+    p{
+        margin-right: 11px;
+    }
+}
+
+.para-details {
+    font-size: small;
+}
+
+.promotion-button{
+    background-color: #4B465C;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+@media (max-width: 1180px){
+    .large-cards{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 768px){
+    .small-cards{
+        flex-wrap: wrap;
+        margin-top: 80px;
+    }
+    .main-body{
+        flex-direction: column;
+        top: 500px;
+    }
+    .left-content{
+        width: 100%;
+    }
+}
+
